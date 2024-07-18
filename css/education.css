@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+.education {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    scroll-margin-top: 85px;
+    padding: 60px 20px;
+    min-height: 50vh;
+}
+
+.education-font-style {
+    color: #ffcc66;
+    font-size: 2.5rem;
+}
+
+.cards-container {
+    padding: 20px 60px;
+    width: 70%;
+}
+
+.card-container {
+    position: relative; /* Needed for the overlay */
+    background: rgba(255, 255, 255, 0.849);
+    border-radius: 5px;
+    height: 200px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensure the background image and overlay don't overflow */
+}
+
+.card-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    opacity: 0.3; /* Adjust the transparency */
+    z-index: 0; /* Ensure it’s behind the content */
+}
+
+.card-container-1::before {
+    background: url('/assets/images/school-img2.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center 86%; /* Center the background image */
+}
+
+.card-container-2::before {
+    background: url('/assets/images/school-img.jpg');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center;
+}
+
+.card-container > * {
+    position: relative; /* Ensure content is above the background */
+    z-index: 1;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.education-image {
+    width: 290px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-container p{
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.color-red{
+    color: #E5031A
+}
+
+.color-blue{
+    color: #00163E;
+}
+
+@media (max-width: 600px){
+    .education {
+        padding: 40px 10px;
+    }
+
+    .education-font-style {
+        font-size: 2rem;
+    }
+
+    .cards-container {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .card-container {
+        height: 150px;
+        margin: 15px 0;
+    }
+
+    .education-image {
+        width: 200px;
+    }
+
+    .card-container p{
+        font-size: 14px;
+    }
+}

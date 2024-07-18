@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin Requintina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/internship.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar" id="navbar">
+            <i class="fa-solid fa-xmark" id="close-icon"></i>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#internship">Internship</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section home" style="background-image: url('assets/images/bgimage.png');">
+        <div class="home-content" >
+            <img src="/assets/images/marvin.jpg" alt="Marvin Requintina" class="profile-image">
+            <div class="text-container">
+                <h1>Hi, I am
+                    <br/>
+                <span class="letter-color">Marvin Requintina</span>
+                </h1>
+                <p> A fourth-year college student passionate about designing and developing web and mobile applications.</p>
+                <div class="icon-links">
+                    <i class="fa-brands fa-github fa-bounce fa-2xl" style="color: #ffcc66; padding-right: 10px;" onclick="openCV('https://github.com/marvinrequintina')"></i>
+                    <i class="fa-brands fa-facebook fa-bounce fa-2xl" style="color: #ffcc66; padding-right: 10px;" onclick="openCV('https://www.facebook.com/marvin.requintina/')"></i>
+                    <i class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #ffcc66; padding-right: 10px;" onclick="openCV('https://www.instagram.com/allenvcxz/')"></i>
+                    <i class="fa-brands fa-linkedin fa-bounce fa-2xl" style="color: #ffcc66; padding-right: 10px;" onclick="openCV('https://www.linkedin.com/in/allen-requintina-a83b34319/')"></i>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="about-me">
+            <div class="image-container">
+                <img src="assets/images/profileimg.png" alt="" class="about-image">
+            </div>
+            <div class="about-content">
+                <h2 class="letter-color">About Me</h2>
+                <p>
+                    I am Marvin Requintina, an undergrad student at 
+                    <span style="color: red;">Mapúa</span> 
+                    <span style="color: blue;">Malayan Colleges of Laguna</span> 
+                    and I'm currently taking a Bachelors degree in Computer Science. My academic journey is focused on exploring web and mobile development, driven by a passion for innovative technological solutions.
+                  </p>
+                <div class="resume-btn" onclick="openCV('https://drive.google.com/file/d/1byIRn4yCRZl5qbbN576xc9K7N-htdv_X/view?usp=sharing')">
+                    View my CV
+                </div>
+            </div>
+        </div>
+        
+        <div class="line-break"></div>
+        <h2 class="skills-title-style">Skills</h2>
+        <div class="skills">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li><img src="/assets/images/python-logo.png" alt="Python Logo"></li>
+                    <li><img src="/assets/images/csharp-logo.png" alt="C# Logo"></li>
+                    <li><img src="/assets/images/javascript-logo.png" alt="JavaScript Logo"></li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li><img src="/assets/images/html-logo.png" alt="HTML Logo"></li>
+                    <li><img src="/assets/images/css-logo.png" alt="CSS Logo"></li>
+                    <li><img src="/assets/images/react-logo.png" alt="React Logo"></li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Related Skills</h3>
+                <ul>
+                    <li><img src="/assets/images/figma-logo.png" alt="Figma Logo"></li>
+                    <li><img src="/assets/images/canva-logo.png" alt="Canva Logo"></li>
+                    <li><img src="/assets/images/ms-logo.png" alt="MS Applications Logo"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education" style="background-image: url('assets/images/educbg.png'); background-size: cover; background-position: bottom;">
+        <i class="fa-solid fa-graduation-cap fa-2xl" style="color: #333; display: flex;"></i>
+        <h2 class="education-font-style">Education</h2>
+        <div class="cards-container">
+            <div class="card-container card-container-1">
+                <img src="/assets/images/mcl.png" alt="Mapúa Malayan Colleges of Laguna" class="education-image">
+                <p class="color-blue">College</p>
+                <p class="color-red">2020 - Present</p>
+            </div>
+            <div class="card-container card-container-2">
+                <img src="/assets/images/mcl.png" alt="Mapúa Malayan Colleges of Laguna" class="education-image">
+                <p class="color-blue">Senior high school</p>
+                <p class="color-red">2018 - 2020</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects" class="projects">
+        <h2 style="color: #ffcc66; font-size: 2.5rem; display: flex; justify-content: center;">My Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <div class="project-image" style="background-image: url('assets/images/projects/mungbean/mungbean-proj.png');"></div>
+                <div class="project-content">
+                    <h3>Mungbean Camera</h3>
+                    <p>A mobile application developed for our thesis using React Native, integrated with machine learning models, allowing users to identify chlorophyll content in mungbean plants using the device's camera.</p>
+                    
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image" style="background-image: url('assets/images/deped-proj.png');"></div>
+                <div class="project-content">
+                    <h3>DepEd Performance Indicator</h3>
+                    <p>A website we developed during our internship at DepEd Sta. Rosa, featuring an account system that enables the calculation of various indicators for assessing school performance.</p>
+                    <i class="fa-solid fa-download fa-xl" style="color: #ffcc66; margin-top: 50px; cursor: pointer;" onclick="openCV('https://depedperformanceindicator.azurewebsites.net/')"></i>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image" style="background-image: url('assets/images/projects/structural.png');"></div>
+                <div class="project-content">
+                    <h3>Structural Estimation and Simulation of a Bungalow Dos Aguas House</h3>
+                    <p>A software we developed for our client in our Software Engineering course using Unity along with C# that renders a 3d visualization structure of a Bungalow house.</p>
+                    <i class="fa-solid fa-download fa-xl" style="color: #ffcc66; margin-top: 50px; cursor: pointer;" onclick="openCV('https://github.com/Namaedaa/Group1_CS134-1P')"></i>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image" style="background-image: url('assets/images/projects/MCLHub.png');"></div>
+                <div class="project-content">
+                    <h3>MCLEventHub</h3>
+                    <p>A project in our Web Development course where we developed a website for Mapúa Malayan Colleges of Laguna that allows users to register, book, and host an event with User and Admin accounts.</p>
+                    <i class="fa-solid fa-download fa-xl" style="color: #ffcc66; margin-top: 50px; cursor: pointer;" onclick="openCV('https://github.com/karlopenguini/MalayanEventHub')"></i>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image" style="background-image: url('assets/images/projects/mansanas.png');"></div>
+                <div class="project-content">
+                    <h3>MansanasForJuan</h3>
+                    <p>A game project we developed using C# that incorporates object-oriented programming (OOP), where players guess the word based on given context related to Philippine culture and heritage.</p>
+                    <i class="fa-solid fa-download fa-xl" style="color: #ffcc66; margin-top: 50px; cursor: pointer;" onclick="openCV('https://github.com/marvinrequintina/MansanasforJuan')"></i>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image" style="background-image: url('assets/images/projects/fruit.png');"></div>
+                <div class="project-content">
+                    <h3>Fruit Collector</h3>
+                    <p>A project we created during our Game Development course using Unity along with C#. Our game lets the user collect fruits using a sprite character and each fruit collected would be converted into points.</p>
+                    <i class="fa-solid fa-download fa-xl" style="color: #ffcc66; margin-top: 50px; cursor: pointer;" onclick="openCV('https://drive.google.com/drive/folders/1ycCQrHhSgmEUH8AGktqTnAk5aX9OLJ5h')"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    
+
+    <section id="internship" class="internship">
+        <div class="intern-container">
+            <div class="img-container">
+                <img src="assets/images/internship/internship-img1.jpg" alt="Intern Presentation" class="img-style" id="slideshow-img">
+            </div>
+            <div class="r-container">
+                <div class="txt-container">
+                    <h2>Practicum</h2>
+                    <p>
+                        During our CS Practicum course, we applied as interns at <strong><span style="color: red">Dep</span><span style="color:blue">Ed</span> Santa Rosa </strong> and were delighted to be accepted to conduct our OJT in their department. 
+                        We were placed in the Planning and Research section, a key area responsible for strategic initiatives and data analysis. 
+                        Under the guidance of the department head, <strong>Sir Adolfo Ibayan</strong>, and with the support of <strong>Sir Bonifacio Lagura</strong> and <strong>Sir Harlan Gefa</strong>, 
+                        we engaged in various tasks that involves data validation, forecasting, and project development. 
+                    </p>
+                </div>
+                <div class="download-btn">
+                    <i class="fa-solid fa-download fa-xl" style="color: white; margin-right: 8px;"></i>
+                    Download Practicum Final Report
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+.internship{
+    background-color: white;
+    color: #333;
+    padding: 60px 150px;
+    min-height: 100vh; /* Ensures each section takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 85px;
+}
+
+.intern-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.txt-container{
+    line-height: 40px;
+}
+
+.txt-container h2{
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #ffcc66;
+}
+.img-style{
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.r-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.r-container p{
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+}
+
+.download-btn{
+    background-color: #ffcc66;
+    padding: 20px 40px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    .img-style{
+        width: 350px;
+    }
+
+    .intern-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .r-container{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .txt-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 5px;
+        line-height: normal;
+    }
+
+    .txt-container h2{
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #ffcc66;
+    }
+
+    .txt-container p{
+        text-align: justify;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .download-btn{
+        background-color: #ffcc66;
+        padding: 20px 40px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        border-radius: 10px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+        cursor: pointer;
+        line-height: normal;
+        font-size: 9px;
+        text-align: left;
+    }
+
+    
+    
+}

@@ -1,0 +1,157 @@
+/* About Me Section */
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 40px;
+}
+.about {
+    background-color: #fff;
+    color: #333;
+    padding: 60px 20px;
+    text-align: justify;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* Skill Card Styles */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.skills-title-style{
+    color: #ffcc66;
+    margin-top: 40px;
+}
+
+.skill-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 0 1 calc(33.33% - 20px); /* Three cards per row on larger screens */
+    max-width: calc(33.33% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Transition effect for card */
+}
+
+.skill-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.skill-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card li {
+    margin-bottom: 10px;
+}
+
+.skill-card img {
+    max-width: 100px;
+    max-height: 100px;
+    transition: transform 0.3s ease-in-out; /* Transition effect for image */
+}
+
+.skill-card img:hover {
+    transform: scale(1.2); /* Increase size of image on hover */
+}
+
+.line-break{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    margin-top: 50px;
+}
+
+@media (max-width: 600px){
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 40px;
+    }
+    .about-image{
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .skill-card {
+        flex: 1 1 100%; /* Make each skill card take full width */
+        max-width: 100%; /* Ensure max width is 100% */
+        width: 100%; /* Ensure each skill card takes full width */
+        margin-bottom: 10px; /* Optional: Add margin bottom for spacing */
+    }
+    .skill-card h3 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+    .skill-card ul {
+        flex-direction: row; /* Stack icons vertically */
+        gap: 10px; /* Adjust gap between icons */
+    }
+    .skill-card img {
+        width: 50px; /* Adjust size for smaller screens */
+    }
+    .line-break {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+}

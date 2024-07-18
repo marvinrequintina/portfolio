@@ -1,0 +1,45 @@
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 100vh; /* Ensures each section takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 85px; /* Adjust for the navbar height */
+}
+
+
+/*Projects Style */
+.portfolio {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Width of the entire scrollbar */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners on the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovering over the scrollbar thumb */
+}
+
